@@ -1,5 +1,3 @@
-import org.junit.jupiter.api.DisplayName;
-import static org.junit.jupiter.api.Assertions.*;
 public class Comunes {
     public static String comunes(int[] nums1, int[] nums2) {
         String resultado = "";

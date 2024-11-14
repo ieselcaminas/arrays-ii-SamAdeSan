@@ -1,7 +1,17 @@
-///2. Duplicados: Escribid un programa Java para encontrar los valores duplicados de un array de valores enteros.
 public class Duplicados {
-    public static String D
+    public static String duplicados (int [] nums){
+        String res = "";
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = i + 1; j < nums.length; j++) {
+                if (nums[i] == nums[j]) {
+                    res += nums[i] + " ";
+                }
+            }
+        }
+        return res;
+    }
     public static void main(String[] args) {
-
+        int[] nums = {1, 3, 5, 2, 3, 8, 2, 10, 5};
+        System.out.println(duplicados(nums));
     }
 }
